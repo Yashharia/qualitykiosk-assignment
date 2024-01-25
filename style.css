@@ -1,0 +1,45 @@
+html {box-sizing: border-box;  }
+  *, *:before, *:after {    box-sizing: inherit;  }
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url('./fonts/din/DINCondensed-Regular.eot');
+    src: url('./fonts/din/DINCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/din/DINCondensed-Regular.woff2') format('woff2'),
+        url('./fonts/din/DINCondensed-Regular.woff') format('woff'),
+        url('./fonts/din/DINCondensed-Regular.ttf') format('truetype'),
+        url('./fonts/din/DINCondensed-Regular.svg#DINCondensed-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h1{font-size: 60px; line-height: 55px; font-weight: bold; color: white; ;font-family: "DIN Condensed", serif; text-transform: uppercase;} 
+h1 span{color: #CCFF00;}
+
+input{font-size: 14px; border: 1px solid #fff; border-radius: 4px; width: 100%; max-width: 100%; margin-bottom: 22px; padding: 18px 24px; font-family: 'Poppins', sans-serif; font-weight: 400;}
+input:focus{border-color: #CCFF00;}
+
+.btn{background: #CCFF00; font-size: 15px; font-weight: 300; line-height: 18px; width: 100%; padding: 17px 0; font-family: 'Montserrat', sans-serif; font-weight: 600; cursor: pointer; border: 0; border-radius: 4px;}
+.btn:hover{background: #fff;}
+
+header{position: fixed; width: 100%; height: fit-content; top: 0; left: 0; padding: 22px 40px; transition: all 0.5s ease;}
+header.active{background-color: rgba(0, 0, 0, 0.5);}
+
+.form-section{background: url('./images/bg.jpg'); background-size: cover; padding: 80px 0;}
+.container{max-width: 1086px; width: 100%; margin: 0 auto; padding: 0 20px}
+.row-wrapper{display: flex; justify-content: space-between; align-items: center; height: fit-content; min-height: calc(100vh - 160px);}
+.left-wrapper{width: 70%;}
+.heading-wrapper{max-width: 428px; position: relative;}
+.heading-wrapper:after{content: ""; width: 38%; height: 2px; background-color: #CCFF00; position: absolute; bottom: -25px; left: 0;}
+.right-wrapper{background-color:#000; padding: 35px 30px 40px; border-radius: 4px; width: 50%; max-width: 440px;}
+.right-wrapper h3{font-size: 18px; line-height: 21px; color: #CCFF00;margin-bottom: 24px; margin-top: 0; font-family: 'Poppins', sans-serif; font-weight: 500;}
+
+
+
+@media (max-width: 991px){
+    header{padding: 20px 0;}
+    .heading-wrapper{max-width: 100%;}
+    h1{font-size: 50px; line-height: 45px; }
+    .row-wrapper{flex-direction: column; justify-content: center; }
+    .row-wrapper > div{width: 100%;max-width: 100%;}
+    .right-wrapper{padding: 30px; margin-top: 30px;}
+}
