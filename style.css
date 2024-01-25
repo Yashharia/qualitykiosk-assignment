@@ -24,16 +24,18 @@ input:focus{border-color: #CCFF00;}
 header{position: fixed; width: 100%; height: fit-content; top: 0; left: 0; padding: 22px 40px; transition: all 0.5s ease;}
 header.active{background-color: rgba(0, 0, 0, 0.5);}
 
-.form-section{background: url('./images/bg.jpg'); background-size: cover; padding: 80px 0;}
-.container{max-width: 1086px; width: 100%; margin: 0 auto; padding: 0 20px}
-.row-wrapper{display: flex; justify-content: space-between; align-items: center; height: fit-content; min-height: calc(100vh - 160px);}
-.left-wrapper{width: 70%;}
+.form-section{background: url('./images/bg.jpg'); background-size: cover; padding: 162px 0 195px;}
+.container{max-width: 1154px; width: 100%; margin: 0 auto; padding: 0 20px}
+.row-wrapper{display: flex; align-items: center; height: fit-content; }
+.left-wrapper{width: 55%;}
 .heading-wrapper{max-width: 428px; position: relative;}
 .heading-wrapper:after{content: ""; width: 38%; height: 2px; background-color: #CCFF00; position: absolute; bottom: -25px; left: 0;}
-.right-wrapper{background-color:#000; padding: 35px 30px 40px; border-radius: 4px; width: 50%; max-width: 440px;}
+.right-wrapper{background-color:#000; padding: 50px 26px 44px; border-radius: 4px; width: 50%; max-width: 440px;}
 .right-wrapper h3{font-size: 18px; line-height: 21px; color: #CCFF00;margin-bottom: 24px; margin-top: 0; font-family: 'Poppins', sans-serif; font-weight: 500;}
 
-
+@media (min-width: 1600px){
+    .form-section{min-height: 100vh;}
+}
 
 @media (max-width: 991px){
     header{padding: 20px 0;}
